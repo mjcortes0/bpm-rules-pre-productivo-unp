@@ -17,12 +17,12 @@
       <dmn:rule id="_A67A2327-7EDE-4770-BA68-02D022D6E880">
         <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
         <dmn:inputEntry id="_39B63AAE-B3D3-4974-8A5A-8299CC5CF7C2">
-          <dmn:text>"Tutela"</dmn:text>
+          <dmn:text>"Petición general y particular"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_B4054B3C-9D19-4B58-9B70-AB6EFCB1A455">
           <dmn:text>{
-	"quantity": "5",
-	"typeDocument": "Tutela",
+	"quantity": "15",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -31,25 +31,25 @@
       <dmn:rule id="_88561D9E-89D5-424E-95EC-FB2F98E6CE83">
         <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
         <dmn:inputEntry id="_CB8E049D-B4F0-4C41-A62C-4037C34F33F1">
-          <dmn:text>"Oficio"</dmn:text>
+          <dmn:text>"Petición de documentos e información"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_22737868-438C-49A5-849A-72169CC09724">
           <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "Oficio",
-	"unitTime": "Minutos",
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_9F5FCEDE-7EF2-4E10-A34A-F84A300960D8">
         <dmn:inputEntry id="_116B575B-115E-4545-8765-7356DB30DDED">
-          <dmn:text>"Derecho de Petición"</dmn:text>
+          <dmn:text>"Peticiones de Congreso"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_1FEC720C-BB29-4368-B283-1B777EDD526D">
           <dmn:text>{
-	"quantity": "3",
-	"typeDocument": "Derecho de Petición",
+	"quantity": "5",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -57,12 +57,12 @@
       </dmn:rule>
       <dmn:rule id="_EF779100-7F40-4657-A6F1-993E585264A6">
         <dmn:inputEntry id="_2B3DCB7F-17B3-4FCD-ACB7-E00451CB123F">
-          <dmn:text>"Invitación"</dmn:text>
+          <dmn:text>"Consulta"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_1D0D0EA7-4387-47B4-B7A8-296BAB5B5ECA">
           <dmn:text>{
-	"quantity": "10",
-	"typeDocument": "Invitación",
+	"quantity": "30",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -70,25 +70,25 @@
       </dmn:rule>
       <dmn:rule id="_4AD0958C-1C68-48D1-9C6F-97468E168848">
         <dmn:inputEntry id="_2EF646CD-FCD7-49EC-BCAC-751F43482D9A">
-          <dmn:text>"Demanda"</dmn:text>
+          <dmn:text>"Quejas"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_06B0A408-83C0-48D3-BE5D-C754959D906F">
           <dmn:text>{
-	"quantity": "3",
-	"typeDocument": "Demanda",
-	"unitTime": "Horas",
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_B2B6C5B7-9112-4385-A0A8-9A626057AEEB">
         <dmn:inputEntry id="_C26EA190-427F-402F-BC0C-84C71DC2FB7C">
-          <dmn:text>"Factura"</dmn:text>
+          <dmn:text>"Denuncia"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E6260D73-E8B1-4D2F-B502-2C9DE56EF701">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Factura",
+	"quantity": "15",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -96,12 +96,12 @@
       </dmn:rule>
       <dmn:rule id="_F45063CC-BC16-4232-B81B-3478C70E5A11">
         <dmn:inputEntry id="_CA370B2C-5BC0-4520-97BB-BE7AE6EB791A">
-          <dmn:text>"Investigación"</dmn:text>
+          <dmn:text>"Reclamo"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_3C9C0619-5FAB-4716-9253-EFF3B1FB5E6F">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Investigación",
+	"quantity": "15",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -109,12 +109,12 @@
       </dmn:rule>
       <dmn:rule id="_1F4055B2-C502-46BA-B0FC-B87E84B27B96">
         <dmn:inputEntry id="_017D4940-EC47-4572-9E05-AB5EA95A4EC6">
-          <dmn:text>"Denuncias"</dmn:text>
+          <dmn:text>"Solicitud entre entidades"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_90FFE1C4-A7D3-4301-8B03-57A911EA6D36">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Denuncias",
+	"quantity": "10",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -122,24 +122,24 @@
       </dmn:rule>
       <dmn:rule id="_615C52C3-A95C-4D66-BE9A-E83A83B65207">
         <dmn:inputEntry id="_1A30F0AD-ABFB-439C-89BF-A07AE37CC867">
-          <dmn:text>"Recursos"</dmn:text>
+          <dmn:text>"Agradecimiento"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_EB66569F-7F8C-42AE-B451-9CDF0F7420AB">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Recursos",
-	"unitTime": "Dias",
+	"quantity": null,
+	"typeDocument": "PQRSD",
+	"unitTime": null,
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_1016E3FE-3626-4479-8246-12521A5802B2">
         <dmn:inputEntry id="_9C2876D7-B7AB-4D50-A942-C41D17320495">
-          <dmn:text>"PQRSD"</dmn:text>
+          <dmn:text>"Traslado por competencia"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_616353D8-D800-4702-8080-688CC4788A6A">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "5",
 	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
@@ -148,12 +148,12 @@
       </dmn:rule>
       <dmn:rule id="_6CD48851-6EBC-4863-A9DC-D87BDB64BE6A">
         <dmn:inputEntry id="_58943800-764B-4980-857B-81857A86213B">
-          <dmn:text>"Acta"</dmn:text>
+          <dmn:text>"Peticiones de Defensoría del Pueblo"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_92EE3890-650E-4CEC-B028-F7BB9CC312E3">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Acta",
+	"quantity": "5",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -161,12 +161,12 @@
       </dmn:rule>
       <dmn:rule id="_73F75BB9-48C8-432B-8017-5E6B22E86A58">
         <dmn:inputEntry id="_32B4CFA2-D97F-42A8-8B88-7462F7F1CD6C">
-          <dmn:text>"Circular"</dmn:text>
+          <dmn:text>"Tutelas de 0 a 12 horas	12"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E724E446-7EBA-445A-B8DC-4D9BEB3C087E">
           <dmn:text>{
 	"quantity": "12",
-	"typeDocument": "Circular",
+	"typeDocument": "Otro",
 	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
@@ -174,38 +174,38 @@
       </dmn:rule>
       <dmn:rule id="_43519A37-6EE9-4212-BDE3-3AD2E29C630B">
         <dmn:inputEntry id="_6C54EE78-3091-4BD0-91AF-7B5E13A65E39">
-          <dmn:text>"Ejemplo"</dmn:text>
+          <dmn:text>"Tutelas de 12 a 24 horas"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_03B0EDD6-5B7B-43C2-B3C0-B9761A130952">
           <dmn:text>{
-	"quantity": "7",
-	"typeDocument": "Ejemplo",
-	"unitTime": "Horas",
+	"quantity": "1",
+	"typeDocument": "Otro",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_41092EF8-68D6-46FA-9653-BC8BC3DAF698">
         <dmn:inputEntry id="_8DBE6557-FC04-416E-BBE5-A75B2CFB93AF">
-          <dmn:text>"Facturas"</dmn:text>
+          <dmn:text>"Tutelas de 24 a 48 horas"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AE259844-A924-453D-A1B1-F28F26A80746">
           <dmn:text>{
-	"quantity": "7",
-	"typeDocument": "Factura",
-	"unitTime": "Horas",
+	"quantity": "2",
+	"typeDocument": "Otro",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_B08595F7-671E-4ED1-93A3-5A448AA352A3">
         <dmn:inputEntry id="_636294FE-4CF0-4430-900B-A42B5DAEF941">
-          <dmn:text>"Memorando"</dmn:text>
+          <dmn:text>"Urgente / Petición con término prioritario"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9EA09220-7B75-45D1-9923-D7C8006CC105">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Memorando",
+	"quantity": "5",
+	"typeDocument": "Otro",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -226,38 +226,38 @@
       </dmn:rule>
       <dmn:rule id="_E5BF6D88-A9AB-4E27-A89A-0CDDA79A83A4">
         <dmn:inputEntry id="_50F75320-033B-45D8-9E8F-47080937C808">
-          <dmn:text>"Petición de información"</dmn:text>
+          <dmn:text>"Comunicación general"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AA81D6BC-B72A-4E90-ADAB-05B370F6BF92">
           <dmn:text>{
-	"quantity": "10",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": null,
+	"typeDocument": "Otro",
+	"unitTime": null,
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_67043983-4BEA-45B2-894A-3D81EF2467D9">
         <dmn:inputEntry id="_B31FEF95-F49F-494B-A5BC-DB52E498504F">
-          <dmn:text>"Petición de interés general"</dmn:text>
+          <dmn:text>"Oficio"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0E58B3B2-56B6-481F-A1F7-A7C6EEF670EE">
           <dmn:text>{
 	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"typeDocument": "Oficio",
+	"unitTime": "Minutos",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_A20565F4-A1C6-4DCB-A6D8-8FD397443432">
         <dmn:inputEntry id="_B91D64B5-BB78-4004-B9B4-6C8D08395CA7">
-          <dmn:text>"Petición de interés particular"</dmn:text>
+          <dmn:text>"Memorando"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_213079F6-C443-4147-A9AA-6CCF03498BC9">
           <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
+	"quantity": "4",
+	"typeDocument": "Memorando",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -265,91 +265,13 @@
       </dmn:rule>
       <dmn:rule id="_9D100BCC-B471-49AA-B7B2-7B5D8CA6769B">
         <dmn:inputEntry id="_5CB06AA8-3A17-4C5D-8208-3CBFAC6FCA48">
-          <dmn:text>"Petición tipo consulta"</dmn:text>
+          <dmn:text>"Circular"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_EBA707E4-81B7-46A2-AB4C-D6D7246F4DFA">
           <dmn:text>{
-	"quantity": "30",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_20DEC799-660A-4F4D-A72A-34D9857077DB">
-        <dmn:inputEntry id="_56C1BD0C-11D9-446E-AA01-774C0EEC5EA5">
-          <dmn:text>"Petición de habeas data reclamo"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_42457448-4F15-4490-9FFA-13063A16D286">
-          <dmn:text>{
-	"quantity": "10",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_A698104F-DB3C-459A-8075-CBFD04F3D1D2">
-        <dmn:inputEntry id="_1DFA970E-91BF-42AD-87D7-373BE6B931BD">
-          <dmn:text>"Petición de unidad autoridad administrativa"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_5C9F406D-1761-45E1-A7B2-6ACAF9E2F510">
-          <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_5D05C7DC-6ED3-4E18-B77F-D33CB27A254B">
-        <dmn:inputEntry id="_38D7E003-C14B-4A8D-9097-19444C098EAE">
-          <dmn:text>"Queja"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_832EBBF3-4BA5-4951-BC84-2EC49656F0AD">
-          <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_2883375D-949C-4B88-BA38-C957198D551A">
-        <dmn:inputEntry id="_07753850-CAC4-4EC5-8568-8E7138CC652E">
-          <dmn:text>"Reclamo"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_3004DBB4-F518-49A5-AFEA-CDFFFCB6D5B8">
-          <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_C6BFBEB6-93CC-488E-8282-1C9F4B57E247">
-        <dmn:inputEntry id="_8A9BDBAC-374D-4157-AB8F-BE01379F8E0B">
-          <dmn:text>"Sugerencia u opinión"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_93EC84B5-15D8-4388-A0D5-4D2F620C0B35">
-          <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_DC41E5B2-DA5C-4110-8937-428633282D98">
-        <dmn:inputEntry id="_82D12873-F9D4-415E-9BD4-6221E8F538B5">
-          <dmn:text>"Denuncia"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_174F90BB-F25D-4325-8052-2E9265CA49DF">
-          <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": "12",
+	"typeDocument": "Circular",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
