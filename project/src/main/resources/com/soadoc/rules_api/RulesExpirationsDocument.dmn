@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_05FBE7D5-5549-4D6A-99B0-2533582DCEB2" name="RulesExpirationsDocument" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B">
   <dmn:extensionElements/>
+  <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
+    <dmn:extensionElements/>
+    <dmn:variable id="_AF72E2C3-F71A-49E0-A42F-32974E833A72" name="documentType"/>
+  </dmn:inputData>
   <dmn:decision id="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" name="response">
     <dmn:extensionElements/>
     <dmn:variable id="_F9DEDB70-71FE-4B74-BB08-0BBD7C2B546F" name="response" typeRef="string"/>
@@ -17,13 +21,13 @@
       <dmn:rule id="_A67A2327-7EDE-4770-BA68-02D022D6E880">
         <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
         <dmn:inputEntry id="_39B63AAE-B3D3-4974-8A5A-8299CC5CF7C2">
-          <dmn:text>"Petición general y particular"</dmn:text>
+          <dmn:text>"Tutela (12 Horas)"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_B4054B3C-9D19-4B58-9B70-AB6EFCB1A455">
           <dmn:text>{
-	"quantity": "15",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": "12",
+	"typeDocument": "Tutela",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
@@ -31,46 +35,46 @@
       <dmn:rule id="_88561D9E-89D5-424E-95EC-FB2F98E6CE83">
         <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
         <dmn:inputEntry id="_CB8E049D-B4F0-4C41-A62C-4037C34F33F1">
-          <dmn:text>"Petición de documentos e información"</dmn:text>
+          <dmn:text>"Tutela (24 Horas)"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_22737868-438C-49A5-849A-72169CC09724">
           <dmn:text>{
-	"quantity": "10",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": "24",
+	"typeDocument": "Tutela",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_9F5FCEDE-7EF2-4E10-A34A-F84A300960D8">
         <dmn:inputEntry id="_116B575B-115E-4545-8765-7356DB30DDED">
-          <dmn:text>"Peticiones de Congreso"</dmn:text>
+          <dmn:text>"Tutela (4 horas)"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_1FEC720C-BB29-4368-B283-1B777EDD526D">
           <dmn:text>{
-	"quantity": "5",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": "4",
+	"typeDocument": "Tutela",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_EF779100-7F40-4657-A6F1-993E585264A6">
         <dmn:inputEntry id="_2B3DCB7F-17B3-4FCD-ACB7-E00451CB123F">
-          <dmn:text>"Consulta"</dmn:text>
+          <dmn:text>"Tutela (48 Horas)"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_1D0D0EA7-4387-47B4-B7A8-296BAB5B5ECA">
           <dmn:text>{
-	"quantity": "30",
-	"typeDocument": "PQRSD",
-	"unitTime": "Dias",
+	"quantity": "48",
+	"typeDocument": "Tutela",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_4AD0958C-1C68-48D1-9C6F-97468E168848">
         <dmn:inputEntry id="_2EF646CD-FCD7-49EC-BCAC-751F43482D9A">
-          <dmn:text>"Quejas"</dmn:text>
+          <dmn:text>"Derecho de petición"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_06B0A408-83C0-48D3-BE5D-C754959D906F">
           <dmn:text>{
@@ -83,7 +87,7 @@
       </dmn:rule>
       <dmn:rule id="_B2B6C5B7-9112-4385-A0A8-9A626057AEEB">
         <dmn:inputEntry id="_C26EA190-427F-402F-BC0C-84C71DC2FB7C">
-          <dmn:text>"Denuncia"</dmn:text>
+          <dmn:text>"Queja"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E6260D73-E8B1-4D2F-B502-2C9DE56EF701">
           <dmn:text>{
@@ -96,7 +100,7 @@
       </dmn:rule>
       <dmn:rule id="_F45063CC-BC16-4232-B81B-3478C70E5A11">
         <dmn:inputEntry id="_CA370B2C-5BC0-4520-97BB-BE7AE6EB791A">
-          <dmn:text>"Reclamo"</dmn:text>
+          <dmn:text>"Reclamos"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_3C9C0619-5FAB-4716-9253-EFF3B1FB5E6F">
           <dmn:text>{
@@ -109,11 +113,11 @@
       </dmn:rule>
       <dmn:rule id="_1F4055B2-C502-46BA-B0FC-B87E84B27B96">
         <dmn:inputEntry id="_017D4940-EC47-4572-9E05-AB5EA95A4EC6">
-          <dmn:text>"Solicitud entre entidades"</dmn:text>
+          <dmn:text>"Sugerencias y felicitaciones"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_90FFE1C4-A7D3-4301-8B03-57A911EA6D36">
           <dmn:text>{
-	"quantity": "10",
+	"quantity": "15",
 	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
@@ -122,20 +126,20 @@
       </dmn:rule>
       <dmn:rule id="_615C52C3-A95C-4D66-BE9A-E83A83B65207">
         <dmn:inputEntry id="_1A30F0AD-ABFB-439C-89BF-A07AE37CC867">
-          <dmn:text>"Agradecimiento"</dmn:text>
+          <dmn:text>"Solicitud de información y documentos"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_EB66569F-7F8C-42AE-B451-9CDF0F7420AB">
           <dmn:text>{
-	"quantity": null,
+	"quantity": "10",
 	"typeDocument": "PQRSD",
-	"unitTime": null,
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_1016E3FE-3626-4479-8246-12521A5802B2">
         <dmn:inputEntry id="_9C2876D7-B7AB-4D50-A942-C41D17320495">
-          <dmn:text>"Traslado por competencia"</dmn:text>
+          <dmn:text>"Congresistas"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_616353D8-D800-4702-8080-688CC4788A6A">
           <dmn:text>{
@@ -148,7 +152,7 @@
       </dmn:rule>
       <dmn:rule id="_6CD48851-6EBC-4863-A9DC-D87BDB64BE6A">
         <dmn:inputEntry id="_58943800-764B-4980-857B-81857A86213B">
-          <dmn:text>"Peticiones de Defensoría del Pueblo"</dmn:text>
+          <dmn:text>"Traslados de competencia"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_92EE3890-650E-4CEC-B028-F7BB9CC312E3">
           <dmn:text>{
@@ -159,53 +163,40 @@
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
-      <dmn:rule id="_73F75BB9-48C8-432B-8017-5E6B22E86A58">
-        <dmn:inputEntry id="_32B4CFA2-D97F-42A8-8B88-7462F7F1CD6C">
-          <dmn:text>"Tutelas de 0 a 12 horas	12"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_E724E446-7EBA-445A-B8DC-4D9BEB3C087E">
-          <dmn:text>{
-	"quantity": "12",
-	"typeDocument": "Otro",
-	"unitTime": "Horas",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
       <dmn:rule id="_43519A37-6EE9-4212-BDE3-3AD2E29C630B">
         <dmn:inputEntry id="_6C54EE78-3091-4BD0-91AF-7B5E13A65E39">
-          <dmn:text>"Tutelas de 12 a 24 horas"</dmn:text>
+          <dmn:text>"Ejemplo"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_03B0EDD6-5B7B-43C2-B3C0-B9761A130952">
           <dmn:text>{
-	"quantity": "1",
-	"typeDocument": "Otro",
-	"unitTime": "Dias",
+	"quantity": "7",
+	"typeDocument": "Ejemplo",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_41092EF8-68D6-46FA-9653-BC8BC3DAF698">
         <dmn:inputEntry id="_8DBE6557-FC04-416E-BBE5-A75B2CFB93AF">
-          <dmn:text>"Tutelas de 24 a 48 horas"</dmn:text>
+          <dmn:text>"Facturas"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AE259844-A924-453D-A1B1-F28F26A80746">
           <dmn:text>{
-	"quantity": "2",
-	"typeDocument": "Otro",
-	"unitTime": "Dias",
+	"quantity": "7",
+	"typeDocument": "Factura",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_B08595F7-671E-4ED1-93A3-5A448AA352A3">
         <dmn:inputEntry id="_636294FE-4CF0-4430-900B-A42B5DAEF941">
-          <dmn:text>"Urgente / Petición con término prioritario"</dmn:text>
+          <dmn:text>"Memorando"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9EA09220-7B75-45D1-9923-D7C8006CC105">
           <dmn:text>{
-	"quantity": "5",
-	"typeDocument": "Otro",
+	"quantity": "4",
+	"typeDocument": "Memorando",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -226,38 +217,38 @@
       </dmn:rule>
       <dmn:rule id="_E5BF6D88-A9AB-4E27-A89A-0CDDA79A83A4">
         <dmn:inputEntry id="_50F75320-033B-45D8-9E8F-47080937C808">
-          <dmn:text>"Comunicación general"</dmn:text>
+          <dmn:text>"Petición de información"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AA81D6BC-B72A-4E90-ADAB-05B370F6BF92">
           <dmn:text>{
-	"quantity": null,
-	"typeDocument": "Otro",
-	"unitTime": null,
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_67043983-4BEA-45B2-894A-3D81EF2467D9">
         <dmn:inputEntry id="_B31FEF95-F49F-494B-A5BC-DB52E498504F">
-          <dmn:text>"Oficio"</dmn:text>
+          <dmn:text>"Petición de interés general"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0E58B3B2-56B6-481F-A1F7-A7C6EEF670EE">
           <dmn:text>{
 	"quantity": "15",
-	"typeDocument": "Oficio",
-	"unitTime": "Minutos",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_A20565F4-A1C6-4DCB-A6D8-8FD397443432">
         <dmn:inputEntry id="_B91D64B5-BB78-4004-B9B4-6C8D08395CA7">
-          <dmn:text>"Memorando"</dmn:text>
+          <dmn:text>"Petición de interés particular"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_213079F6-C443-4147-A9AA-6CCF03498BC9">
           <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "Memorando",
+	"quantity": "15",
+	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -265,23 +256,1241 @@
       </dmn:rule>
       <dmn:rule id="_9D100BCC-B471-49AA-B7B2-7B5D8CA6769B">
         <dmn:inputEntry id="_5CB06AA8-3A17-4C5D-8208-3CBFAC6FCA48">
-          <dmn:text>"Circular"</dmn:text>
+          <dmn:text>"Petición tipo consulta"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_EBA707E4-81B7-46A2-AB4C-D6D7246F4DFA">
           <dmn:text>{
-	"quantity": "12",
-	"typeDocument": "Circular",
-	"unitTime": "Horas",
+	"quantity": "30",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_20DEC799-660A-4F4D-A72A-34D9857077DB">
+        <dmn:inputEntry id="_56C1BD0C-11D9-446E-AA01-774C0EEC5EA5">
+          <dmn:text>"Petición de habeas data reclamo"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_42457448-4F15-4490-9FFA-13063A16D286">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_A698104F-DB3C-459A-8075-CBFD04F3D1D2">
+        <dmn:inputEntry id="_1DFA970E-91BF-42AD-87D7-373BE6B931BD">
+          <dmn:text>"Petición de unidad autoridad administrativa"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5C9F406D-1761-45E1-A7B2-6ACAF9E2F510">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2883375D-949C-4B88-BA38-C957198D551A">
+        <dmn:inputEntry id="_07753850-CAC4-4EC5-8568-8E7138CC652E">
+          <dmn:text>"Reclamo"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3004DBB4-F518-49A5-AFEA-CDFFFCB6D5B8">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_C6BFBEB6-93CC-488E-8282-1C9F4B57E247">
+        <dmn:inputEntry id="_8A9BDBAC-374D-4157-AB8F-BE01379F8E0B">
+          <dmn:text>"Sugerencia u opinión"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_93EC84B5-15D8-4388-A0D5-4D2F620C0B35">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_DC41E5B2-DA5C-4110-8937-428633282D98">
+        <dmn:inputEntry id="_82D12873-F9D4-415E-9BD4-6221E8F538B5">
+          <dmn:text>"Denuncia"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_174F90BB-F25D-4325-8052-2E9265CA49DF">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_BBC42017-CB1F-44F3-832E-8914AD2457C4">
+        <dmn:inputEntry id="_6D294306-1802-464E-BED0-7AF9ADC8C8E0">
+          <dmn:text>"Derecho de petición | Actualizacion de datos Ley 1755 de 2015"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8F30C045-1E49-41C7-AE53-75C4C17BDAEA">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_712F53E0-ED40-477D-BDB5-6D45365F9BD5">
+        <dmn:inputEntry id="_2B9BA6BB-A71B-4CDD-91DF-0B61DC62F914">
+          <dmn:text>"Derecho de petición | Estado de trámite convenios de movilidad"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5C0619E8-E524-4FC5-84C7-F40ED98CFAD3">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_022A65D8-7992-4F64-83A9-F2EC9D462DBE">
+        <dmn:inputEntry id="_B3C1A46A-3793-4376-9E25-5F8AAE5552B8">
+          <dmn:text>"Derecho de petición | Estado de trámite de registro profesional"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3D7F2CA3-78F2-488B-AC59-3E45882F8288">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_CB94AF2A-1A55-4F61-8089-B0A6101E63A7">
+        <dmn:inputEntry id="_C40C646E-5E21-4DE2-AFB9-B5CB96AB4A8E">
+          <dmn:text>"Derecho de petición | Estado de proceso inspección y vigilancia"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_CE4E7282-69E4-4AFA-BD86-B42CC2F16A48">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_61245D94-A39E-404A-9C3A-B4A3E2E2F93B">
+        <dmn:inputEntry id="_B9F42EBE-5292-421F-AEC6-87A8841E7E58">
+          <dmn:text>"Derecho de petición | Estado de trámite de permiso temporal"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_339BA7C0-22F5-4852-A144-179D071D3920">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B0508E82-E450-4089-B408-EE534865D863">
+        <dmn:inputEntry id="_67641989-0E56-4596-A429-61DD88E53AB9">
+          <dmn:text>"Derecho de petición | Revocatoria actos administrativos e inactivación de registros profesionales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E3BC658C-2B44-4B26-B59F-B4593470F76B">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_A33E6B01-26E8-4553-85BD-5B49FAEA739E">
+        <dmn:inputEntry id="_50F6F107-6D70-4849-9DA4-C4CF7523CC10">
+          <dmn:text>"Derecho de petición | Informacion general de trámites y servicios"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EF93F7F0-290E-495E-8304-363C3FD3A9B0">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_ABE9B275-7C3B-4BC4-9E04-A6D87BA6F135">
+        <dmn:inputEntry id="_46973412-7E70-45BA-BDC9-ECE09ACB5549">
+          <dmn:text>"Derecho de petición | Petición de periodista, menores de edad, artículo 20 Ley 1437 de 2011"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_AD64A645-7CA2-48F6-96D4-1C620D155B30">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_4B230117-3C66-4555-A0FC-7C787260B71A">
+        <dmn:inputEntry id="_CD8EEF0F-F146-400A-B987-E1AF61FA07DE">
+          <dmn:text>"Derecho de petición | Solicitud de devoluciones de dinero"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9D290B86-CFA7-4FAF-9B6C-713FFF87AC95">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2D654683-5CC7-4EBB-BC95-5DCF87FD8F91">
+        <dmn:inputEntry id="_E078B14C-60CD-47CE-9519-A7831C986904">
+          <dmn:text>"Derecho de petición | Solicitudes sobre permiso temporal"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_BB8CA2D3-A215-4A56-B9BE-C758593521E3">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F20E14C8-99C5-4FCF-A20D-10DB7F8FCADA">
+        <dmn:inputEntry id="_C9FC3BF8-282C-4467-9EB9-98175F85E57A">
+          <dmn:text>"Derecho de petición | Relacionamiento o creación de sede IES profesión"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_35513E38-87E7-4D99-ABF3-A4F3E256FEDF">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F3C9AFB0-54CB-48C1-89FA-48B9EBD4E576">
+        <dmn:inputEntry id="_A49273E7-0C78-4F80-B434-4563DFFDE787">
+          <dmn:text>"Derecho de petición | Otras solicitudes"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_21F4C70E-B592-42CB-907D-B5F599FAEE8E">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_71B1BC4B-F7F1-429E-9A54-6FDD311D5924">
+        <dmn:inputEntry id="_F7EB5AD2-9BC8-40A7-903C-1E4D0FDA442D">
+          <dmn:text>"Queja | Queja en contra de funcionario de la entidad"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_180939F7-B194-4AB3-98A9-2B57FD8E4A94">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_AECA9194-ED47-4059-A905-9538268F9CA2">
+        <dmn:inputEntry id="_39A1B856-B4CE-4BE5-ADC0-2A15138DBA73">
+          <dmn:text>"Queja | Queja por inadecuada prestación de los servicios"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C4BB90CB-6DA4-43C9-8A69-CE5CE63FA53D">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_6085CD2A-BB64-4C0D-9365-FDE117502A5E">
+        <dmn:inputEntry id="_630A39AC-1C5D-4B87-AFE7-3A04A08608B3">
+          <dmn:text>"Reclamos | Otros reclamos"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5966D6B3-935C-4920-9F0F-FC748FFC3D64">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B58B0B17-D4B3-4574-A681-E3C08390846E">
+        <dmn:inputEntry id="_70AB6ED5-E0CD-4446-A60A-CCFDDDA5C110">
+          <dmn:text>"Reclamos | Reclamo por incumplimiento en tiempos de trámites"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2EE4C519-5F15-42DA-A9C6-AEE711B13B06">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_29BF568F-8A29-416B-BED6-BEF0A03DB596">
+        <dmn:inputEntry id="_60FA9B89-0492-4D3E-8E18-F20C506086B1">
+          <dmn:text>"Reclamos | Reclamo sobre el tratamiento de datos personales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7D1F5000-460C-4D85-B3E8-FCA8D3AF0774">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_3D5BBD1E-1C20-475D-A48D-2436ACC74CE7">
+        <dmn:inputEntry id="_34710682-DB46-45B6-A735-79518992BB9A">
+          <dmn:text>"Sugerencias y felicitaciones | Sugerencias y felicitaciones"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8E9CA7EC-EAF2-4E4D-821B-114D850C5FCC">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_83F01E5E-9C65-4EBC-A1B3-6E26B0F5E8F1">
+        <dmn:inputEntry id="_A77F4C00-3EA4-4172-88E4-6371DD34B7AB">
+          <dmn:text>"Solicitud de información y documentos | Copia de documentos, solicitud información estadística"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9F190F79-52DD-429E-996B-4D5509EE1391">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_94FF3E67-5E4C-4A86-89F4-B3307206CE67">
+        <dmn:inputEntry id="_AD935700-66C2-47E0-8A1C-2F36116D4690">
+          <dmn:text>"Solicitud de información y documentos | Otras solicitudes de constancias, certificaciones de contratistas, laborales, RUT etc."</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8034A2F1-4CD4-4BB4-BF0C-265BBD859647">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_70C11EDD-F870-459D-A4FF-E668AE17CCE0">
+        <dmn:inputEntry id="_B0E22E41-09A7-4790-9F5F-79266B2834B8">
+          <dmn:text>"Congresistas | Petición de congresistas y veedurías"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_04312A7D-DC6B-4156-AABA-84182E134BED">
+          <dmn:text>{
+	"quantity": "5",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_D1D9F3ED-85D3-4C65-AB6E-DA076B9CA235">
+        <dmn:inputEntry id="_64A1692E-9067-48B0-8357-176C44744AF3">
+          <dmn:text>"Solicitud de información y documentos | Solicitudes de entidades públicas o entes de control"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_37AE6CEE-A707-4277-AD53-4E8D5AFC6974">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_8D775D6C-0181-4B1D-A686-F68D7ECE7A80">
+        <dmn:inputEntry id="_BCD1F211-79A5-40B6-B98F-9887E6AA54B0">
+          <dmn:text>"Solicitud de información y documentos | Verificación estado de pago, cupón de pago"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7DB62D7A-4276-495C-82BD-A0512E65847E">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_6C703E4C-CBAE-47DE-90CD-0BCDAB37A900">
+        <dmn:inputEntry id="_4B5CB605-126F-43A5-8CE4-B4702C586A31">
+          <dmn:text>"Solicitud de información y documentos | Tarjeta profesional digital"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_738EAB81-0B6E-4FA4-8FFE-FEAA73C1587B">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B0672B97-C0BA-4650-A5A7-5F225659132C">
+        <dmn:inputEntry id="_904A61F8-8491-457B-B07D-9E798E64DF63">
+          <dmn:text>"Traslados de competencia | Traslado a otros Consejos Profesionales y Entidades Públicas"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0D031DEA-BDFA-4848-BC6E-AA982FCD5AC2">
+          <dmn:text>{
+	"quantity": "5",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_1BE2D52A-91BB-4530-8504-3E1CD7903B28">
+        <dmn:inputEntry id="_2ADD61F9-1B75-4420-87CB-3B00C940AB4C">
+          <dmn:text>"Solicitud de información y documentos | Verificación de registros y certificados de profesionales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EE9E3FE4-1A76-4CD2-A222-1C521C80BBDC">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F65D053B-AD52-4D64-850B-E02CCD2A1B03">
+        <dmn:inputEntry id="_C13ED385-4DDB-4AA3-B7FD-A395AF2C88F4">
+          <dmn:text>"Solicitudes de conceptos | Estudio de profesiones no inscritas"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4E808F1E-4227-41AB-B15C-5889CA32E711">
+          <dmn:text>{
+	"quantity": "30",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_4507E8D2-0DEB-4E60-A891-F89812D0A75D">
+        <dmn:inputEntry id="_2AD06721-1D86-4F85-B986-4BF55834FDB0">
+          <dmn:text>"Solicitudes de conceptos | Concepto sobre competencias profesionales para ejercer una labor"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_31B891AF-2697-4C2A-B14A-71701348009D">
+          <dmn:text>{
+	"quantity": "30",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_7471A9A7-21F1-47AF-B158-C39F9A68FB55">
+        <dmn:inputEntry id="_5BED4048-200F-4FE2-966A-0BAC11793326">
+          <dmn:text>"Solicitudes de conceptos | Conceptos jurídicos sobre las funciones de la entidad"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C4728B63-7108-405B-807A-B70C17636002">
+          <dmn:text>{
+	"quantity": "30",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_5DA1C7F5-42AC-4C0C-9272-5E7460512FCA">
+        <dmn:inputEntry id="_5DC17F41-2C40-43FC-A799-18B808B5DC7D">
+          <dmn:text>"Solicitudes de conceptos | Conceptos sobre la reglamentación profesional en general"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_69F37AC3-1D10-451C-9B43-6CA53093459F">
+          <dmn:text>{
+	"quantity": "30",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9F6DE8A8-9DB0-4A99-9F4B-A33B026ABE50">
+        <dmn:inputEntry id="_037B8B78-86E7-4893-A322-21F6761BF340">
+          <dmn:text>"Denuncias | Denuncias por actos de corrupción"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3AC0A96D-C26A-4A03-9BD8-3F4B1F34B5EE">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_CAAC5E55-E99D-4808-AEC1-F49F83A41CB2">
+        <dmn:inputEntry id="_4BBE2194-366F-4682-93BB-71E68D399321">
+          <dmn:text>"Auditorias"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4364740D-A309-490C-9B4C-A15F75784EDD">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Auditorias",
+	"unitTime": null,
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_40C86270-319E-41C4-8CE8-9DE2564A62A7">
+        <dmn:inputEntry id="_0BB1F4ED-8014-4AB4-9723-32E0D32799BC">
+          <dmn:text>"Acuerdos de Movilidad Internacional"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_51E30956-0067-42C2-B6CD-15723EF614E5">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Acuerdos",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_0C41D360-F097-47B4-96DC-804B5FD596E0">
+        <dmn:inputEntry id="_913E1624-107B-4CB8-BEE2-E9F30765CBB9">
+          <dmn:text>"Bienes Inmuebles"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_24CFB642-1588-461F-8CEB-81173CA8B36E">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Bienes Inmuebles",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2ABD2844-5381-4A05-8BCA-4B84F8BA6C50">
+        <dmn:inputEntry id="_E9D9203D-B9CC-4C88-BB4D-DF72A19D8EFA">
+          <dmn:text>"Comité de Convivencia Laboral"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1AEC7DB1-1485-4338-821C-8DB23656FF0D">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Comite",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_0618D2BF-8A8C-4169-B7CF-DB671672927A">
+        <dmn:inputEntry id="_9F52AE26-ABB0-4680-9D3F-632B85D08654">
+          <dmn:text>"Conciliaciones Financieras / Conciliación Bancaria"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_CCCD83D5-399F-489F-9040-C613F47D0CBA">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Conciliaciones",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_D790A593-9A56-4397-A9CF-E3793C022133">
+        <dmn:inputEntry id="_46CE6ED0-B165-41B2-B4B0-9C9AA90DBC9D">
+          <dmn:text>"Contratos y Convenios - Asuntos contractuales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4A8A3D36-26A0-4A81-9EB6-311F4A9E91EE">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Contratos y Convenios",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_7DC44C7D-7D68-47F6-A88C-1A75FC45C770">
+        <dmn:inputEntry id="_27B93569-DA40-4FB6-8A49-DC8D2543C6CB">
+          <dmn:text>"Contratos y Convenios - Asuntos precontractuales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0319336C-4375-41EA-8729-30CB6A083B61">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Contratos y Convenios",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_150A5A68-1DE4-4FC9-B430-6676E3D10A3E">
+        <dmn:inputEntry id="_6432533A-DFA0-4552-B575-17416EC1199A">
+          <dmn:text>"Contratos y Convenios - Supervisiones y ejecución"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8FEF06B1-609B-4677-BF22-D5BB2782136E">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Contratos y Convenios",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_60EBD1AC-2364-4265-B0D0-65BEF89C257E">
+        <dmn:inputEntry id="_C351980B-7F58-4273-B5BA-39E29ECE7D7C">
+          <dmn:text>"Convenios Bancarios"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_6204EFC7-91AD-4F70-86E4-6AD364FB8BB9">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Convenios Bancarios",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_C95C2199-72E7-40E7-8338-C31773CE3723">
+        <dmn:inputEntry id="_F49E4681-6C44-49D7-AEBC-7193006CAC20">
+          <dmn:text>"Convenios Interinstitucionales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_ABAB6BD8-56AF-4292-8591-77485561138D">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Convenios Interinstitucionales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_AB43D58F-078B-4AC7-9164-D1873E8790FA">
+        <dmn:inputEntry id="_268A4E99-E8AB-433C-8DED-D2D3552D5C56">
+          <dmn:text>"Coordinación del Sistema de Control Interno"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B6A13710-2580-427E-8716-FC91F7E63FD4">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Coordinación del Sistema de Control Interno",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_19C40D94-4CA8-4FAC-962E-7F0804979B9E">
+        <dmn:inputEntry id="_9170E3F8-467B-4E22-8306-66D9CFF31BF5">
+          <dmn:text>"Declaraciones de Retención"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2747F8D7-8361-4BB5-8A5A-6699FD44C922">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Declaraciones de Retencion",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_8E8C03BB-55B3-496E-82A5-D35A3205FB97">
+        <dmn:inputEntry id="_55479557-728C-4C69-9E66-0E6E844C0261">
+          <dmn:text>"Documentos allegados a trámites de matrículas y certificados"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_26C7099A-077A-4AA8-A66B-D8CD1BCD32CC">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Documentos allegados",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_7DAEF833-F709-4506-BD7C-0CCFC54A3EC9">
+        <dmn:inputEntry id="_C753BED2-71B8-4E9C-AF4C-412B7F237E63">
+          <dmn:text>"Documentos allegados a trámites de permisos temporales."</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4970E640-CD29-4AF1-93B9-8FBF65337B95">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Documentos allegados",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_728BBCE3-CF4F-4171-B9A0-8A1A9C200A7D">
+        <dmn:inputEntry id="_15E36310-4DFE-4715-B753-F1E40D73B013">
+          <dmn:text>"Documentos/Pruebas/Solicitudes allegadas a Procesos Disciplinarios"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0B00322D-3353-43D4-BFDA-A427212F9F36">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Documentos/Pruebas",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_89CF2FA1-B6E2-4F59-BB92-850547113C91">
+        <dmn:inputEntry id="_D170568A-FA47-41E5-9173-18C2269CB727">
+          <dmn:text>"Documentos/Solicitudes allegadas a Procesos de Inspección y Vigilancia"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_968E6E23-96A2-46FC-BAF4-09B067772430">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Documentos/Solicitudes",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_47AF5DE4-08BB-43CC-8899-39EE64657279">
+        <dmn:inputEntry id="_D040FDA7-6247-4525-B234-57CB226D1B19">
+          <dmn:text>"Estudios de Inversiones y Titulo Valor"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_770A1915-ED87-4B9E-9D9C-9FEA6568E0C1">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Estudios de Inversiones",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_C20948A5-C451-4BBF-BBEC-35EFD9971B93">
+        <dmn:inputEntry id="_74BF54AC-560F-4835-80F0-88CB0C3DAC76">
+          <dmn:text>"Herramientas Archivísticas"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B96A917E-1925-4BE7-B25C-AA1F8EA8C897">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Herramientas Archivisticas",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_44962820-3DB8-45F4-A007-CEEF2868BD97">
+        <dmn:inputEntry id="_70D4BACF-288C-41A4-AD03-9B89029AD245">
+          <dmn:text>"Historias Laborales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7587ECE8-6992-404C-9718-F0098E13C87C">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Historias Laborales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_45C842C8-2AA6-4CB9-8FD0-1506AF60E89D">
+        <dmn:inputEntry id="_733A7408-75E0-49BD-8F96-142980D2A453">
+          <dmn:text>"Informes de Comisión"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_35AD3903-5CEE-4914-A4F8-00017ECFB2B6">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Informes de Comision",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_E73D2DF5-35C2-4B33-AA3D-BAC30B5EE667">
+        <dmn:inputEntry id="_C9C62799-93B0-46DC-85AB-585E38ECC59F">
+          <dmn:text>"Informes de Conciliación Judicial y Secretaria Técnica"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EBE2366E-6DEE-4B6A-A567-F32C7F8F9060">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Informes de conciliacion",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F8EAB7D6-646B-4181-B047-BB3CEBCB90A1">
+        <dmn:inputEntry id="_D38661D1-5B6C-4014-A5F1-AC6CBCBDACCB">
+          <dmn:text>"Inscripción De Profesionales Acreditados - RUNPA"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A2CEFDE7-816C-419A-9443-5538A150782C">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Inscripcion de Profesionales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_E07C4992-E292-4501-9356-4CE8E06E3896">
+        <dmn:inputEntry id="_EA309B4E-7FEB-4A33-8267-0330D9D1B497">
+          <dmn:text>"Junta de Consejeros Nacional"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EBB012D5-75F4-432E-8E6D-95B6B4135083">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Junta de Consejeros Nacional",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_4C4186D0-FB6F-4247-90F6-169675E9C6FE">
+        <dmn:inputEntry id="_9BAD47CA-3B2D-42DA-A7D7-D00DB5AF358E">
+          <dmn:text>"Junta de Consejeros Seccional"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_761B1051-72E9-480D-BB18-8A50D4795A90">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Junta de Consejeros Seccional",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_0AD02038-08D8-47AF-864A-0C8B8DC2DCEF">
+        <dmn:inputEntry id="_C5D92EBE-6AD4-4BEE-918A-B489FD01D98F">
+          <dmn:text>"Listados y Certificaciones de egresados"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_ABBF922C-A781-4201-B213-47BC01136B78">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Listados y Certificaciones de egresados",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_74C55BBC-AEA1-40F7-888E-C22B20362CD7">
+        <dmn:inputEntry id="_2B4DA9C9-1687-42F1-A3FD-E2E35C407437">
+          <dmn:text>"Nómina"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5CC6A6F4-CE5A-4331-9AA8-7F0223178078">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Nómina",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_8866ED37-2768-4200-A406-506A97D66081">
+        <dmn:inputEntry id="_9C016851-7EC7-4ABC-8206-B52BCC48179C">
+          <dmn:text>"Plan de Bienestar social"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5B53D8BB-3C95-41EE-8F7D-FD7847DC150C">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Plan de Bienestar social",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F12DF1C4-DA7F-4CFC-B1FE-9619A2115E20">
+        <dmn:inputEntry id="_912CDE28-D930-4270-AEBE-2AF4053CD4A2">
+          <dmn:text>"Plan de Capacitación"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_F3275EEE-2F28-41BA-B778-0F9A37EB504A">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Plan de Capacitacion",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2D6A8240-36CC-4D56-97D7-D0C639C3547B">
+        <dmn:inputEntry id="_2D4910B0-6ABD-4584-9DEE-6F8A63A7CB06">
+          <dmn:text>"Planes de Transferencias Documentales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_84022EDD-1F2F-4F6C-85CB-FDA7CE44D946">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Planes de Transferencias Documentales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_243ED4D4-1396-45FE-88BB-7DCEAE3E7A0D">
+        <dmn:inputEntry id="_D2AE9C65-D328-4E15-88B7-341750862102">
+          <dmn:text>"Procesos de Denuncias Penales, Policía, Procuraduría"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9C29CA97-326B-48BE-8B6E-DA4D18925164">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Procesos de Denuncias Penales, Policia, Procuraduria",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_D867A1DE-1268-4728-A8B6-197AC26A7745">
+        <dmn:inputEntry id="_A3B21C7E-0994-475A-878B-CF0047882589">
+          <dmn:text>"Procesos de Investigaciones Internas Disciplinarias"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9219D8E0-7139-4846-AEA1-464237DB37C6">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Procesos de Investigaciones Internas Disciplinarias",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_67E48760-736C-4A6B-BDA0-22F00819789E">
+        <dmn:inputEntry id="_923F6140-60C4-457D-B9D6-9547FDCD7131">
+          <dmn:text>"Procesos de Selección de Personal"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2A18A85C-B74D-4510-85D0-DBC9791A90C4">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Procesos de Seleccion de Personal",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_D82F0DD7-E55A-45E7-B760-9B2360EB412D">
+        <dmn:inputEntry id="_EF452FC5-49C9-460B-8B42-CEB0A5A73972">
+          <dmn:text>"Procesos Judiciales y Extrajudiciales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A6A79550-FCAE-4180-9D3E-55F094E19C2D">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Procesos Judiciales y Extrajudiciales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_51CB326D-6915-4B8B-B3A0-E52FAC7E82F3">
+        <dmn:inputEntry id="_B3D014AC-975E-464E-BB11-4F56143562D2">
+          <dmn:text>"Programa del Sistema de Gestión de Seguridad y Salud en el Trabajo"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_BF9C9C7E-AF6F-4393-B299-77CD8C8B19CF">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Salud en el Trabajo",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_287E967F-AC9D-4792-9631-8006AEBC1355">
+        <dmn:inputEntry id="_DDE2E963-36BF-4E19-825C-321A6AE02250">
+          <dmn:text>"Quejas/Denuncias ético-disciplinarias"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A5883CA5-D22E-4912-AAB5-6406E77BBEBB">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Quejas/Denuncias",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_06F5FD0F-F205-4AFE-9662-994FFB12B55B">
+        <dmn:inputEntry id="_C000BDBB-9360-4D7F-AAC6-45FE257F4131">
+          <dmn:text>"Relaciones Interinstitucionales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_54434502-031D-497F-AA4A-FF3078548104">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Relaciones Interinstitucionales",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_12481A90-38C0-4ABE-9656-A98D93F720E7">
+        <dmn:inputEntry id="_BBDC13B3-6569-4C52-A704-A8ADCE4D5485">
+          <dmn:text>"Rendición de Cuenta Fiscal y tributaria"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5D10AEDD-E93F-4441-BCC4-C83A7871169C">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Rendicion de Cuenta Fiscal",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_394005C5-18DF-4549-BDFE-02F18232D6C4">
+        <dmn:inputEntry id="_10538BEC-B05D-42DE-BDDA-211FF0F45798">
+          <dmn:text>"Reporte de Operaciones Reciprocas"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B166F814-4FC4-4B75-9450-E4763B45E1F1">
+          <dmn:text>{
+	"quantity": null,
+	"typeDocument": "Reporte de Operaciones Reciprocas",
+	"unitTime": "null",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_0A095F11-C769-4E9C-8363-C21D7B0BCC69">
+        <dmn:inputEntry id="_E3E91FDB-AC9F-4029-9D71-8348FE59A4A7">
+          <dmn:text>"Oficio Cauca"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7DD681F0-56C3-48DD-9B36-FBB17D547325">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_3809CD6F-DFB8-48C8-B64F-FC13513CAFA3">
+        <dmn:inputEntry id="_62806055-07E3-47F0-AD48-8A0932925E17">
+          <dmn:text>"Oficio Bolivar"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0E51F959-8276-4B37-8265-F2E74B0751C1">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2E6649D3-939F-4DBB-A3D2-CCFA94EE08BD">
+        <dmn:inputEntry id="_54BFB6DD-1A7E-4CE0-AB25-A91D77739088">
+          <dmn:text>"Oficio Antioquia"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_F86CBAD6-9539-4ECF-A6D1-C4925A80BC81">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_40A43C38-D750-45BC-AD23-54714FA6D024">
+        <dmn:inputEntry id="_01B148CB-C2E4-44AF-AC68-9A506F415014">
+          <dmn:text>"Oficio Atlántico"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_230619FC-55EE-45B6-9ACB-B48050BEEDC7">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2B475F65-A75A-4DD4-909A-578C54600698">
+        <dmn:inputEntry id="_A25D1CB4-3724-4310-814D-E9FCDA7343F7">
+          <dmn:text>"Oficio Boyacá"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_131C8D6C-B464-4DF6-BCF7-50ADE13E3674">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_58D23AAE-863D-43B1-8ACA-0ECFA8BBE214">
+        <dmn:inputEntry id="_4A845F20-818A-4E51-9EF5-CEA6B7899179">
+          <dmn:text>"Oficio Caldas"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EBDBF494-9C98-4FF2-BBB9-988591F5168A">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_3E3BC5E7-81DC-48F2-8939-59280473FA68">
+        <dmn:inputEntry id="_80F7CD2C-EEB3-4C5B-9818-E918AE9CE77E">
+          <dmn:text>"Oficio Cesar"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B26144F1-CAB4-495C-A0B9-0B9BA9B8D49F">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_FCF05E98-DBBA-431A-886B-3D39EB4D570F">
+        <dmn:inputEntry id="_978CF495-838E-4F11-A2B6-97E1A64EBAE8">
+          <dmn:text>"Oficio Córdoba"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B0DAA511-7CFF-4864-B43A-988933959BD5">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_93AF5074-D443-40D2-8AF7-8E965E4F7AD6">
+        <dmn:inputEntry id="_B4C83D70-D2A4-480E-87A2-29C00B3517A7">
+          <dmn:text>"Oficio Cundinamarca"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_52812906-7036-43AB-9258-6DD7AFFB5B8D">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_69220D74-FA60-43D5-979F-E8A2E580F158">
+        <dmn:inputEntry id="_CA78CEEA-0F3D-475F-94BF-660B3D2A7845">
+          <dmn:text>"Oficio Cundinamarca B"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_6E1DB381-F277-4B44-BFB9-15FBB57F97DE">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_44309DD3-4AE8-404A-9167-A6B33DE140D7">
+        <dmn:inputEntry id="_AA33995E-4EF8-453A-B10C-BEE8421A52B9">
+          <dmn:text>"Oficio Cundinamarca C"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_F73DB5BB-4187-47F5-9E03-0195E66E94A1">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F42682DC-1600-483F-BC08-C1C57D159134">
+        <dmn:inputEntry id="_19A3051F-185F-4CAA-A8E3-A4087981A71F">
+          <dmn:text>"Oficio Guajira"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B6DADA50-A9E2-4D9D-A782-2F0280BB45A2">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_06742365-6AEF-4D47-9291-C3787036A523">
+        <dmn:inputEntry id="_6818B384-F10D-47E7-809E-D9EB8B08CA85">
+          <dmn:text>"Oficio Nacional"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_79AC7750-4F5B-4B19-BB92-BFCA95FE68D0">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_A71367DB-BE89-4FC2-88E4-C61178749699">
+        <dmn:inputEntry id="_FB3AC6C1-26BB-432A-B28B-9888BC02BA23">
+          <dmn:text>"Oficio Nariño"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_BCBC8431-FEDB-4601-A41A-46413749B467">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9C47A234-9F4E-4FF3-A70B-1A63511EC2A7">
+        <dmn:inputEntry id="_00C753BE-0E54-4E51-9349-9810CEB4DC2B">
+          <dmn:text>"Oficio Norte de Santander"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4C6DF3C0-E653-4D41-8529-CBBEE02F87ED">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_75AF5CB2-0FA4-4498-A9C4-D2CEA9BA3778">
+        <dmn:inputEntry id="_1766C248-ADD7-4E7F-8926-A7CD47C64CD5">
+          <dmn:text>"Oficio Quindio"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5BA86154-2F81-4092-A3E7-174BFA4A4625">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_3AD31AD6-0D89-48AC-A8FD-0E56C39EF225">
+        <dmn:inputEntry id="_447ED22B-0BE4-450A-9C73-F01486B5E043">
+          <dmn:text>"Oficio Risaralda"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_0C2A13B9-028E-4729-8CD9-0896D9A79147">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_A4286504-B1F9-411A-9FEE-2EA47CB53BBE">
+        <dmn:inputEntry id="_5252BE79-AB9C-453B-A7E9-CE414A7DB9D3">
+          <dmn:text>"Oficio Santander"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5F41F9FA-A0C0-40C4-9FCC-18259695C28F">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_56C54421-9CDE-4188-B8AB-98690BFBD22F">
+        <dmn:inputEntry id="_F06C3470-DB99-4E7B-85E0-330A2E4D6781">
+          <dmn:text>"Oficio Tolima"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9CE8CB7B-97FE-449A-957B-D47C3E949BD3">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_48EF486B-5946-4973-8CF3-4650C77FFA72">
+        <dmn:inputEntry id="_04C0B5B7-8D1C-46DC-9635-4AAB93CCD13E">
+          <dmn:text>"Oficio Valle"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9919DA81-EFA9-4455-8792-FA082C87DC4A">
+          <dmn:text>{
+	"quantity": "2",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
-    <dmn:extensionElements/>
-    <dmn:variable id="_AF72E2C3-F71A-49E0-A42F-32974E833A72" name="documentType"/>
-  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -294,15 +1503,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" dmnElementRef="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="195" y="172" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" dmnElementRef="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -310,6 +1510,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="194" y="45" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" dmnElementRef="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="195" y="172" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_EF3D4118-D105-43B6-BA6F-626C73AED8A9" dmnElementRef="_EF3D4118-D105-43B6-BA6F-626C73AED8A9">
