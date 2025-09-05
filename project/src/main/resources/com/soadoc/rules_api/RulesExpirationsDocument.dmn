@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_05FBE7D5-5549-4D6A-99B0-2533582DCEB2" name="RulesExpirationsDocument" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B">
   <dmn:extensionElements/>
-  <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
-    <dmn:extensionElements/>
-    <dmn:variable id="_AF72E2C3-F71A-49E0-A42F-32974E833A72" name="documentType"/>
-  </dmn:inputData>
   <dmn:decision id="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" name="response">
     <dmn:extensionElements/>
     <dmn:variable id="_F9DEDB70-71FE-4B74-BB08-0BBD7C2B546F" name="response" typeRef="string"/>
@@ -376,6 +372,19 @@
           <dmn:text>"Derecho de petición | Estado de proceso inspección y vigilancia"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_CE4E7282-69E4-4AFA-BD86-B42CC2F16A48">
+          <dmn:text>{
+	"quantity": "15",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_AE3CEA06-A364-46D5-9414-9FCD875209D0">
+        <dmn:inputEntry id="_3FEACF0B-56DD-4BC9-A9A3-FB8DC3A5E765">
+          <dmn:text>"Derecho de petición | Estado de proceso ético profesionales"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C4FE2757-99B6-4753-B147-506F1198AAD6">
           <dmn:text>{
 	"quantity": "15",
 	"typeDocument": "PQRSD",
@@ -1491,6 +1500,10 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
+    <dmn:extensionElements/>
+    <dmn:variable id="_AF72E2C3-F71A-49E0-A42F-32974E833A72" name="documentType"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -1503,15 +1516,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" dmnElementRef="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="194" y="45" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" dmnElementRef="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -1519,6 +1523,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="195" y="172" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" dmnElementRef="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="194" y="45" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_EF3D4118-D105-43B6-BA6F-626C73AED8A9" dmnElementRef="_EF3D4118-D105-43B6-BA6F-626C73AED8A9">
